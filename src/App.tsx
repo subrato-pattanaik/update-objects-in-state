@@ -1,11 +1,4 @@
-import {
-  Deck,
-  DefaultTemplate,
-  FlexBox,
-  Heading,
-  Slide,
-  SpectacleLogo,
-} from "spectacle";
+import { Deck, DefaultTemplate, FlexBox, Heading, Slide } from "spectacle";
 
 import reactLogo from "./assets/react.svg";
 import "./App.css";
@@ -31,9 +24,8 @@ function App() {
         </FlexBox>
       </Slide>
       <Slide>
-        <FlexBox height="100%" justifyContent="center" alignItems="center">
-          <Heading fontSize="h2">Made with</Heading>
-          <SpectacleLogo size={300} />
+        <FlexBox height="100%">
+          <Heading fontSize="h2">Treat state as immutable</Heading>
         </FlexBox>
       </Slide>
     </Deck>
