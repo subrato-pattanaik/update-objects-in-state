@@ -1,9 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
 import App from "./App.tsx";
 
-createRoot(document.getElementById("root")!).render(
+import "./index.css";
+
+const rootElm = document.getElementById("root");
+if (!rootElm) {
+  throw new Error("Root element not found");
+}
+
+createRoot(rootElm).render(
   <StrictMode>
     <App />
   </StrictMode>
