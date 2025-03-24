@@ -19,7 +19,7 @@ export default function Slide05() {
   }
 }`;
 
-  const [person, _setPerson] = useState({
+  const [person] = useState({
     firstName: "Foo",
     lastName: "Bar",
   });
