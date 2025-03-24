@@ -10,6 +10,9 @@ const FourthSlide = React.lazy(() => import("./components/slides/Slide04"));
 const FifthSlide = React.lazy(() => import("./components/slides/Slide05"));
 const SixthSlide = React.lazy(() => import("./components/slides/Slide06"));
 const SeventhSlide = React.lazy(() => import("./components/slides/Slide07"));
+const EighthSlide = React.lazy(() => import("./components/slides/Slide08"));
+const NinthSlide = React.lazy(() => import("./components/slides/Slide09"));
+const ThankYou = React.lazy(() => import("./components/slides/ThankYou"));
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
       <FifthSlide />
       <SixthSlide />
       <SeventhSlide />
+      <EighthSlide />
+      <NinthSlide />
+      <ThankYou />
     </Deck>
   );
 }
