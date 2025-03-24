@@ -1,10 +1,10 @@
+import React, { useState } from "react";
 import { CodePane, FlexBox, Heading, Slide } from "spectacle";
 import { Input } from "../ui/input";
-import React, { useState } from "react";
 import { Label } from "../ui/label";
 
 export default function Slide06() {
-  const langString = `function Form() {
+  const codeString = `function Form() {
   const [person, setPerson] = useState({
     firstName: 'Foo',
     lastName: 'Bar'
@@ -47,7 +47,7 @@ export default function Slide06() {
         style={{ gap: "1rem", justifyContent: "space-around" }}
       >
         <CodePane language="jsx" highlightRanges={[7, 15]}>
-          {langString}
+          {codeString}
         </CodePane>
         <div className="flex flex-1 flex-col justify-center gap-4 bg-background border-4 rounded-md p-12 h-72">
           <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -68,7 +68,6 @@ export default function Slide06() {
               maxLength={25}
             />
           </div>
-
           <div className="mt-9">
             <h2>
               Full name: {person.firstName} {person.lastName}

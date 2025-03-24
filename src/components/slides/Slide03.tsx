@@ -7,6 +7,7 @@ export default function Slide03() {
 };
 
 obj.name = 'Jane Doe';  // mutation of obj
+console.log(obj);  // { name: 'Jane Doe', age: 25 }s
 `;
 
   return (
