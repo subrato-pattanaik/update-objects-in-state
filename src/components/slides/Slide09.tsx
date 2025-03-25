@@ -14,14 +14,13 @@ export default function Slide06() {
   function handleFirstNameChange(e) {
     setPerson((draft ) => {
       draft.firstName = e.target.value
-    }); // ✅
-    // person === newPerson // false
+    });
   }
 
   function handleLastNameChange(e) {
     setPerson((draft ) => {
       draft.firstName = e.target.value
-    }); // ✅
+    }); 
   }
 }`;
 
@@ -33,14 +32,13 @@ export default function Slide06() {
   function handleFirstNameChange(e: React.ChangeEvent<HTMLInputElement>) {
     setPerson((draft) => {
       draft.firstName = e.target.value;
-    }); // ✅
-    // person === newPerson // false
+    });
   }
 
   function handleLastNameChange(e: React.ChangeEvent<HTMLInputElement>) {
     setPerson((draft) => {
       draft.lastName = e.target.value;
-    }); // ✅
+    });
   }
 
   return (
@@ -51,7 +49,7 @@ export default function Slide06() {
 
       <FlexBox
         justifyContent="flex-start"
-        style={{ gap: "1rem", justifyContent: "space-around" }}
+        style={{ gap: "16px", justifyContent: "space-around" }}
       >
         <CodePane
           language="jsx"

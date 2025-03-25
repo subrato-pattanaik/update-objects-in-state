@@ -1,7 +1,7 @@
 import { CodePane, FlexBox, Heading, Slide } from "spectacle";
 
 export default function Slide03() {
-  const langString = `const obj = {
+  const codeString = `const obj = {
   name: 'John Doe',
   age: 25
 };
@@ -15,7 +15,7 @@ console.log(obj);  // { name: 'Jane Doe', age: 25 }s
       <FlexBox height="100%" flexDirection="column">
         <Heading fontSize="h3">Primitive values are immutable</Heading>
         <Heading fontSize="h3">Non-primitive values can be mutable</Heading>
-        <CodePane language="js">{langString}</CodePane>
+        <CodePane language="js">{codeString}</CodePane>
       </FlexBox>
     </Slide>
   );

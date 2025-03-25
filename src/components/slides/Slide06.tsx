@@ -41,19 +41,18 @@ export default function Slide06() {
   return (
     <Slide>
       <Heading fontSize="h3">Example: Use setState function</Heading>
-
       <FlexBox
         justifyContent="flex-start"
-        style={{ gap: "1rem", justifyContent: "space-around" }}
+        style={{ gap: "16px", justifyContent: "space-around" }}
       >
         <CodePane language="jsx" highlightRanges={[7, 15]}>
           {codeString}
         </CodePane>
         <div className="flex flex-1 flex-col justify-center gap-4 bg-background border-4 rounded-md p-12 h-72">
           <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Label htmlFor="firstname">First name:</Label>
+            <Label htmlFor="firstName">First name:</Label>
             <Input
-              id="firstname"
+              id="firstName"
               value={person.firstName}
               onChange={handleFirstNameChange}
               maxLength={25}

@@ -6,8 +6,8 @@ import { Label } from "../ui/label";
 export default function Slide05() {
   const codeString = `function Form() {
   const [person, setPerson] = useState({
-    firstName: 'Foo',
-    lastName: 'Bar'
+    firstName: "Foo",
+    lastName: "Bar" 
   });
 
   function handleFirstNameChange(e) {
